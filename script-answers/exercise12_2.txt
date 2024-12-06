@@ -1,0 +1,19 @@
+Script started on Thu Dec  5 22:43:40 2024
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Slovenia.local/Users/douglas/projects/fullstackopen/containers[0m[27m[24m[Jdouglas@Slovenia containers % [K[?2004h[7mdocker container run -it ubuntu bash[27m[36D[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mb[27ma[27ms[27mh[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K8bb55f067777: Pulling fs layer [1B[1A[2K8bb55f067777: Downloading  293.1kB/28.89MB[1B[1A[2K8bb55f067777: Downloading  4.135MB/28.89MB[1B[1A[2K8bb55f067777: Downloading  9.157MB/28.89MB[1B[1A[2K8bb55f067777: Downloading  15.06MB/28.89MB[1B[1A[2K8bb55f067777: Downloading  20.96MB/28.89MB[1B[1A[2K8bb55f067777: Downloading  26.59MB/28.89MB[1B[1A[2K8bb55f067777: Verifying Checksum [1B[1A[2K8bb55f067777: Download complete [1B[1A[2K8bb55f067777: Extracting  294.9kB/28.89MB[1B[1A[2K8bb55f067777: Extracting  6.488MB/28.89MB[1B[1A[2K8bb55f067777: Extracting  10.32MB/28.89MB[1B[1A[2K8bb55f067777: Extracting  20.05MB/28.89MB[1B[1A[2K8bb55f067777: Extracting  24.18MB/28.89MB[1B[1A[2K8bb55f067777: Extracting  27.13MB/28.89MB[1B[1A[2K8bb55f067777: Extracting  28.61MB/28.89MB[1B[1A[2K8bb55f067777: Extracting  28.89MB/28.89MB[1B[1A[2K8bb55f067777: Pull complete [1BDigest: sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@58a30649f12f: /root@58a30649f12f:/# [7mmkdir -p /usr/src/app[27mmkdir -p /usr/src/app
+[?2004l[?2004h]0;root@58a30649f12f: /root@58a30649f12f:/# [7mtouch /usr/src/app/index.js[27mtouch /usr/src/app/index.js
+[?2004l[?2004h]0;root@58a30649f12f: /root@58a30649f12f:/# [K[7mexit[27mexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Slovenia.local/Users/douglas/projects/fullstackopen/containers[0m[27m[24m[Jdouglas@Slovenia containers % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Thu Dec  5 22:44:15 2024
