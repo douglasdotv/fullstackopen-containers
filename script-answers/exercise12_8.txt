@@ -1,0 +1,77 @@
+Script started on Mon Dec  9 17:33:28 2024
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Slovenia.local/Users/douglas/projects/fullstackopen/containers[0m[27m[24m[Jdouglas@Slovenia containers % [K[?2004hexitdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[K
+[K[K[A[A[30C[7Ccompose -f todo-app/todo-backend/docker-compose.dev.yml up -d[1B[K[A[18C[A[12Crm script-answers/exercise12_8.txt[K[1B[K[A[64C[34Ddocker compose -f todo-app/todo-backend/docker-compose.dev.yml up -d[K[?2004l[1B[1A[1B[0G[?25l[+] Running 1/0
+ [32m✔[0m Container todo-backend-mongo-1  [32mRun...[0m                                  [34m0.0s [0m
+[?25h[1m[7m%[27m[1m[0m                                                                                ]7;file://Slovenia.local/Users/douglas/projects/fullstackopen/containers[0m[27m[24m[Jdouglas@Slovenia containers % [K[?2004hdocker compose -f todo-app/todo-backend/docker-compose.dev.yml up -d[K[A[12Cexit[K[1B[K[A[34Cdocker exec -it todo-backend-mongo-1 mongosh -u root -p example[K
+[K[K[A[A[30C[?2004l[2B
+]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6757542e96e79fa732fc0420
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.4[0m
+Using MongoDB:		8.0.3
+[1m[33mUsing Mongosh[0m:		2.3.4
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-12-09T20:28:50.928+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2024-12-09T20:28:50.928+00:00: We suggest setting the contents of sysfsFile to 0.
+   2024-12-09T20:28:50.928+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2024-12-09T20:28:50.928+00:00: vm.max_map_count is too low
+   2024-12-09T20:28:50.928+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Guse the_database
+switched to db the_database
+[1G[0Jthe_database> [15G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> exit[19G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'67575329df24b1dd62fc0421'[39m) }); [1G[1A[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'67575329df24b1dd62fc0421'[39m) }); [1G[1A[1G[0Jthe_database> exit[19G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'6757412b36b94cb147fc0421'[39m),
+    text: [32m'Chungking Express'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'6757412b36b94cb147fc0422'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> exit[19G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'67575329df24b1dd62fc0421'[39m) }); [1G[1A[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'67575329df24b1dd62fc0421'[39m) }); [1G[1A[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> db.todos.deleteOne({ [33m_id[39m: ObjectId([32m'67575329df24b1dd62fc0421'[39m) }); [1G[1A[1G[0Jthe_database> exit[19G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> [15Gdb.todos.insertOne({text[33mtext[39m: [32m"[39m[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool[39m [1G [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m"[39m, d[36mdo[39mdone: fals[33mfalse[39m})
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'6757544b96e79fa732fc0421'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m"Increase the number of tools in my tool belt"[39m, [33mdone[39m: [33mfalse[39m})[22G[1A[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'6757412b36b94cb147fc0421'[39m),
+    text: [32m'Chungking Express'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'6757412b36b94cb147fc0422'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'6757544b96e79fa732fc0421'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Slovenia.local/Users/douglas/projects/fullstackopen/containers[0m[27m[24m[Jdouglas@Slovenia containers % [K[?2004h[7mdocker compose -f todo-app/todo-backend/docker-com[7mp[7mose.dev.yml down[27m[K[A[13C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27m-[27mf[27m [27mt[27mo[27md[27mo[27m-[27ma[27mp[27mp[27m/[27mt[27mo[27md[27mo[27m-[27mb[27ma[27mc[27mk[27me[27mn[27md[27m/[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mmp[27mo[27ms[27me[27m.[27md[27me[27mv[27m.[27my[27mm[27ml[27m [27md[27mo[27mw[27mn[?2004l
+[1A[1B[0G[?25l[+] Running 0/0
+ ⠋ Container todo-backend-mongo-1  Sto...                                  [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ ⠙ Container todo-backend-mongo-1  Sto...                                  [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 2/1
+ [32m✔[0m Container todo-backend-mongo-1  [32mRem...[0m                                  [34m0.2s [0m
+ [32m✔[0m Network todo-backend_default    [32mRemov...[0m                                [34m0.0s [0m
+[?25h[1m[7m%[27m[1m[0m                                                                                ]7;file://Slovenia.local/Users/douglas/projects/fullstackopen/containers[0m[27m[24m[Jdouglas@Slovenia containers % [K[?2004h[7mexit[27m[27me[27mx[27mi[27mt[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+
+Script done on Mon Dec  9 17:34:53 2024
