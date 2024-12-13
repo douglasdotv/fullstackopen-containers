@@ -8,7 +8,7 @@ services:
       - ./todo-frontend:/usr/src/app
       - /usr/src/app/node_modules
     environment:
-      - VITE_BACKEND_URL=http://localhost:3000
+      - VITE_BACKEND_URL=http://localhost:8080/api
   server:
     image: todo-backend-dev
     build:
