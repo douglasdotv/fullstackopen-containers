@@ -2,6 +2,7 @@ node_modules
 mongo_data
 redis_data
 Dockerfile
+dev.Dockerfile
 docker-compose.yml
 docker-compose.dev.yml
 .dockerignore
